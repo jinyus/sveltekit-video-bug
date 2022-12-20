@@ -8,7 +8,7 @@
 <h1>Video{data.id}</h1>
 <div id="video-wrapper">
 	<video id="player" controls playsinline poster="https://media.vimejs.com/poster.png">
-		<source src="https://media.vimejs.com/720p.mp4" type="video/mp4" />
+		<source src={data.url} type="video/mp4" />
 	</video>
 </div>
 
