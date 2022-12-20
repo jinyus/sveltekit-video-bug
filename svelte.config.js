@@ -1,4 +1,6 @@
-import adapter from '@sveltejs/adapter-auto';
+// import adapter from '@sveltejs/adapter-auto';
+import adapter from '@sveltejs/adapter-static';
+
 import { vitePreprocess } from '@sveltejs/kit/vite';
 
 /** @type {import('@sveltejs/kit').Config} */
@@ -9,7 +11,9 @@ const config = {
 
 	kit: {
 		adapter: adapter()
-	}
+	},
+
+	entries: ['/', '/video/1', '/video/2', '/video/3']
 };
 
 export default config;
